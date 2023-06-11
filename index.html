@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <section>
+    <div class="container">
+      <form id="form" action="/">
+        <h2>Formulario</h2>
+        <div class="form-group">
+          <input id="email" type="text" placeholder="Correo Electronico">
+          <div id="EmailError" class="error-message"></div>
+        </div>
+        <div class="form-group">
+          <input id="password" type="text" placeholder="Contraseña">
+          <div id="PassError" class="error-message"></div>
+        </div>
+        <div class="form-group">
+          <input id="passwordConfirmation" type="text" placeholder="Confirmar Contraseña">
+          <div id="ConfirmPassError" class="error-message"></div>
+        </div>
+        <div class="form-group">
+          <input id="address" type="text" placeholder="Dirección">
+          <div id="AddressError" class="error-message"></div>
+        </div>
+        <div class="form-group">
+          <select id="comuna" name="comuna">
+            <option value="">Selecciona una comuna</option>
+            <option value="comuna1">Algarrobo</option>
+            <option value="comuna2">Antofagasta</option>
+            <option value="comuna3">Concepción</option>
+            <option value="comuna4">La serena</option>
+            <option value="comuna5">Las Condes</option>
+            <option value="comuna6">Providencia</option>
+            <option value="comuna7">Puente Alto</option>
+            <option value="comuna8">Quilicura</option>
+            <option value="comuna9">Valparaiso</option>
+            <option value="comuna10">Valdivia</option>
+          </select>
+          <div id="comunaError" class="error-message"></div>
+        </div>
+        <div class="form-group">
+          <input id="phone" type="text" placeholder="Telefono +56">
+          <div id="PhoneError" class="error-message"></div>
+        </div>
+        <div class="form-group">
+          <input id="url" type="text" placeholder="URL">
+          <div id="URL_Error" class="error-message"></div>
+        </div>
+        <div class="form-group">
+          <input id="hobbies" type="text" placeholder="Pasatiempos">
+          <div id="AficionesError" class="error-message"></div>
+        </div>
+        <div>
+          <input type="submit" value="ENVIAR">
+          <div id="successMessage" class="successful-message"></div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <script src="js/index.js"></script>
+</body>
+</html>
