@@ -153,7 +153,6 @@ function validarExtensionDominio(domain) {
   return validExtensions.includes(extension);
 }
 
-
 function contienePuntosAdicionales(texto) {
   var parts = texto.split(".");
   if (parts.length > 1) {
@@ -164,13 +163,6 @@ function contienePuntosAdicionales(texto) {
     }
   }
   return false;
-}
-
-function validarExtensionDominio(domain) {
-  var validExtensions = ["com", "org", "net", "edu"];
-  var domainParts = domain.split(".");
-  var extension = domainParts[domainParts.length - 1];
-  return validExtensions.includes(extension);
 }
 
 function validarContraseña(contraseña) {
@@ -203,35 +195,7 @@ function esLetra(caracter) {
 
 function validarDireccion(direccion) {
   var caracteresEspeciales = [
-    "!",
-    "@",
-    "#",
-    "$",
-    "%",
-    "^",
-    "&",
-    "*",
-    "(",
-    ")",
-    "_",
-    "+",
-    "=",
-    "[",
-    "]",
-    "{",
-    "}",
-    "|",
-    "\\",
-    ";",
-    ":",
-    '"',
-    "'",
-    "<",
-    ">",
-    ",",
-    ".",
-    "/",
-    "?",
+    "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "+", "=", "[", "]", "{", "}", "|", "\\", ";", ":", '"', "'", "<", ">", ",", ".", "/", "?",
   ];
 
   for (var i = 0; i < caracteresEspeciales.length; i++) {
